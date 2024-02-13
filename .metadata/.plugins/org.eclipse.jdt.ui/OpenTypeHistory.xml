@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-    <typeInfo handle="=bankapp/\/Users\/mahekbaru\/.m2\/repository\/org\/hibernate\/orm\/hibernate-core\/6.4.1.Final\/hibernate-core-6.4.1.Final.jar=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate.orm=/=/maven.artifactId=/hibernate-core=/=/maven.version=/6.4.1.Final=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.hibernate.dialect(MySQL8Dialect.class[MySQL8Dialect" modifiers="1048609" timestamp="1702649153000"/>
-    <typeInfo handle="=bankapp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.services{CustomerService.java[CustomerService" modifiers="1" timestamp="1707727528000"/>
-    <typeInfo handle="=bankapp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.controller{CustomerController.java[CustomerController" modifiers="1" timestamp="1707471116000"/>
-</typeInfoHistroy>

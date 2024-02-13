@@ -1,0 +1,76 @@
+package com.example.entities;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Loan {
+  
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private int id;
+  private String customerId;
+  private double amount;
+  private double interestRate;
+  private int termMonths;
+  private String status;
+  public int getId() {
+    return id;
+  }
+  public void setId(int id) {
+    this.id = id;
+  }
+  public String getCustomerId() {
+    return customerId;
+  }
+  public void setCustomerId(String customerId) {
+    this.customerId = customerId;
+  }
+  public double getAmount() {
+    return amount;
+  }
+  public void setAmount(double amount) {
+    this.amount = amount;
+  }
+  public double getInterestRate() {
+    return interestRate;
+  }
+  public void setInterestRate(double interestRate) {
+    this.interestRate = interestRate;
+  }
+  public int getTermMonths() {
+    return termMonths;
+  }
+  public void setTermMonths(int termMonths) {
+    this.termMonths = termMonths;
+  }
+  public String getStatus() {
+    return status;
+  }
+  public void setStatus(String status) {
+    this.status = status;
+  }
+  public Loan(int id, String customerId, double amount, double interestRate, int termMonths,
+      String status) {
+    super();
+    this.id = id;
+    this.customerId = customerId;
+    this.amount = amount;
+    this.interestRate = interestRate;
+    this.termMonths = termMonths;
+    this.status = status;
+  }
+  @Override
+  public String toString() {
+    return "Loan [id=" + id + ", customerId=" + customerId + ", amount=" + amount
+        + ", interestRate=" + interestRate + ", termMonths=" + termMonths + ", status=" + status
+        + "]";
+  }
+  public Loan() {
+    super();
+    // TODO Auto-generated constructor stub
+  }
+  
+}

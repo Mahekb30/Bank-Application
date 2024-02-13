@@ -1,0 +1,15 @@
+server.port=8082
+# Eureka Config
+spring.application.name=CLOUD-GATEWAY
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+eureka.client.service-url.default-zone=http://localhost:8761/eureka/
+eureka.instance.hostname=localhost
+
+spring.cloud.gateway.mvc.routes[0].id==customer-service
+spring.cloud.gateway.mvc.routes[0].uri= ln://CUSTOMER-SERVICE
+spring.cloud.gateway.mvc.routes[0].predicates[0]=Path=/customers/**
+
+spring.cloud.gateway.mvc.routes[1].id==loan-service
+spring.cloud.gateway.mvc.routes[1].uri= ln://LOAN-SERVICE
+spring.cloud.gateway.mvc.routes[1].predicates[0]=Path=/loans/**

@@ -1,0 +1,13 @@
+package com.example.dtos;
+
+public class CustomerRequestDto {
+  private String name;
+  
+  private long accNo;
+  
+  private String accType;
+  
+  private String panCardNo;
+  
+  private Double balance;
+}

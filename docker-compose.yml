@@ -28,7 +28,7 @@ services:
     networks:
       - microservice-network
   zipkin:
-    image: zipkin
+    image: openzipkin/zipkin
     container_name: zipkin
     ports:
       - "9411:9411"
@@ -81,7 +81,6 @@ services:
       - configreg
     networks:
       - microservice-network
-      - mysql
     environment:
       - SPRING_PROFILES_ACTIVE=docker
   cloudreg:

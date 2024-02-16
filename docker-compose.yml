@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   zookeeper:
@@ -22,9 +22,10 @@ services:
     image: mysql
     container_name: mysql
     ports:
-      - "3308:3308"
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=admin
+      - DATABASE_PORT=3306
     networks:
       - microservice-network
   zipkin:

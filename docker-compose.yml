@@ -48,7 +48,7 @@ services:
       - SPRING_PROFILES_ACTIVE=docker
   servicereg:
     image: mahekbaru/servicereg:latest
-    container_name: eureka
+    container_name: eureka-server
     ports:
       - "8761:8761"
     depends_on:

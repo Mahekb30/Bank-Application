@@ -2,6 +2,10 @@ package com.example.dtos;
 
 public class LoanEvent {
   
+  @Override
+  public String toString() {
+    return "LoanEvent [message=" + message + ", status=" + status + ", loan=" + loan + "]";
+  }
   private String message;
   private String status;
   private LoanRequestDto loan;
